@@ -1,0 +1,15 @@
+//CommonJS, every file is a modu (by default)
+//Module - encapsulated code (only sharing what we want)
+
+//const {aiganym, bob} = require('./4-names')
+const names = require('./4-names')
+const sayHi = require('./5-utils')
+const {items, singlePerson} = require('./6-alternative-flavor')
+//console.log(names)
+//console.log(sayHi)
+require('./7-mind-grenade')
+
+sayHi('josh')
+sayHi(names.aiganym)
+sayHi(names.bob)
+sayHi(singlePerson.name)
